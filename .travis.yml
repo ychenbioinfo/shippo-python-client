@@ -15,6 +15,7 @@ before_script:
   - pip install unittest2
   - pip install mock
   - pip install vcrpy
+  - pip install shippo
 
 script:
   - python setup.py test
