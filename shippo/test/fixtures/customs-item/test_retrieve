@@ -15,7 +15,7 @@ interactions:
           i386", "lang_version": "2.7.11", "platform": "Darwin-15.2.0-x86_64-i386-64bit",
           "bindings_version": "1.2.0"}']
     method: POST
-    uri: https://api.goshippo.com/v1/customs/items/
+    uri: https://api.goshippo.com/customs/items/
   response:
     body:
       string: !!binary |
@@ -48,7 +48,7 @@ interactions:
           i386", "lang_version": "2.7.11", "platform": "Darwin-15.2.0-x86_64-i386-64bit",
           "bindings_version": "1.2.0"}']
     method: GET
-    uri: https://api.goshippo.com/v1/customs/items/a76d93913fbd4e08b4033d3ecc79bebc
+    uri: https://api.goshippo.com/customs/items/a76d93913fbd4e08b4033d3ecc79bebc
   response:
     body:
       string: !!binary |

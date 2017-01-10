@@ -17,7 +17,7 @@ interactions:
           i386", "lang_version": "2.7.11", "platform": "Darwin-15.2.0-x86_64-i386-64bit",
           "bindings_version": "1.2.0"}']
     method: POST
-    uri: https://api.goshippo.com/v1/addresses/
+    uri: https://api.goshippo.com/addresses/
   response:
     body:
       string: !!binary |
@@ -58,7 +58,7 @@ interactions:
           i386", "lang_version": "2.7.11", "platform": "Darwin-15.2.0-x86_64-i386-64bit",
           "bindings_version": "1.2.0"}']
     method: POST
-    uri: https://api.goshippo.com/v1/addresses/
+    uri: https://api.goshippo.com/addresses/
   response:
     body:
       string: !!binary |
@@ -97,7 +97,7 @@ interactions:
           i386", "lang_version": "2.7.11", "platform": "Darwin-15.2.0-x86_64-i386-64bit",
           "bindings_version": "1.2.0"}']
     method: POST
-    uri: https://api.goshippo.com/v1/parcels/
+    uri: https://api.goshippo.com/parcels/
   response:
     body:
       string: !!binary |
@@ -137,7 +137,7 @@ interactions:
           i386", "lang_version": "2.7.11", "platform": "Darwin-15.2.0-x86_64-i386-64bit",
           "bindings_version": "1.2.0"}']
     method: POST
-    uri: https://api.goshippo.com/v1/shipments/
+    uri: https://api.goshippo.com/shipments/
   response:
     body:
       string: !!binary |
@@ -197,7 +197,7 @@ interactions:
           i386", "lang_version": "2.7.11", "platform": "Darwin-15.2.0-x86_64-i386-64bit",
           "bindings_version": "1.2.0"}']
     method: GET
-    uri: https://api.goshippo.com/v1/shipments/570b6d0f32724111ba8cda0507d987ef
+    uri: https://api.goshippo.com/shipments/570b6d0f32724111ba8cda0507d987ef
   response:
     body:
       string: !!binary |
@@ -257,7 +257,7 @@ interactions:
           i386", "lang_version": "2.7.11", "platform": "Darwin-15.2.0-x86_64-i386-64bit",
           "bindings_version": "1.2.0"}']
     method: GET
-    uri: https://api.goshippo.com/v1/shipments/570b6d0f32724111ba8cda0507d987ef/rates/
+    uri: https://api.goshippo.com/shipments/570b6d0f32724111ba8cda0507d987ef/rates/
   response:
     body:
       string: !!binary |
@@ -313,7 +313,7 @@ interactions:
           i386", "lang_version": "2.7.11", "platform": "Darwin-15.2.0-x86_64-i386-64bit",
           "bindings_version": "1.2.0"}']
     method: POST
-    uri: https://api.goshippo.com/v1/transactions/
+    uri: https://api.goshippo.com/transactions/
   response:
     body:
       string: !!binary |

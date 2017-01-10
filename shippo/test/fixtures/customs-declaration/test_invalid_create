@@ -17,7 +17,7 @@ interactions:
           i386", "lang_version": "2.7.11", "platform": "Darwin-15.2.0-x86_64-i386-64bit",
           "bindings_version": "1.2.0"}']
     method: POST
-    uri: https://api.goshippo.com/v1/customs/declarations/
+    uri: https://api.goshippo.com/customs/declarations/
   response:
     body: {string: !!python/unicode '{"items": ["This field is required."]}'}
     headers:

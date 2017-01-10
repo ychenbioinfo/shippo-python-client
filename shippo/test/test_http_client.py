@@ -44,7 +44,7 @@ class ClientTestBase():
         return self.request_mocks[self.request_client.name]
 
     @property
-    def valid_url(self, path='/v1/echo'):
+    def valid_url(self, path='/echo'):
         return 'https://api.goshippo.com%s' % (path,)
 
     def make_request(self, method, url, headers, post_data):

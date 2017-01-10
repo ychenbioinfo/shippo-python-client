@@ -163,7 +163,7 @@ class APIResource(ShippoObject):
     @classmethod
     def class_url(cls):
         cls_name = cls.class_name()
-        return "/v1/%ss" % (cls_name,)
+        return "/%ss" % (cls_name,)
 
     def instance_url(self):
         object_id = self.get('object_id')
@@ -245,21 +245,21 @@ class Address(CreateableAPIResource, ListableAPIResource, FetchableAPIResource):
     @classmethod
     def class_url(cls):
         cls_name = cls.class_name()
-        return "v1/%ses/" % (cls_name,)
+        return "%ses/" % (cls_name,)
 
 
 class CustomsItem(CreateableAPIResource, ListableAPIResource, FetchableAPIResource):
 
     @classmethod
     def class_url(cls):
-        return "v1/customs/items/"
+        return "customs/items/"
 
 
 class CustomsDeclaration(CreateableAPIResource, ListableAPIResource, FetchableAPIResource):
 
     @classmethod
     def class_url(cls):
-        return "v1/customs/declarations/"
+        return "customs/declarations/"
 
 
 class Parcel(CreateableAPIResource, ListableAPIResource, FetchableAPIResource):
@@ -267,7 +267,7 @@ class Parcel(CreateableAPIResource, ListableAPIResource, FetchableAPIResource):
     @classmethod
     def class_url(cls):
         cls_name = cls.class_name()
-        return "v1/%ss/" % (cls_name,)
+        return "%ss/" % (cls_name,)
 
 
 class Manifest(CreateableAPIResource, ListableAPIResource, FetchableAPIResource):
@@ -279,7 +279,7 @@ class Manifest(CreateableAPIResource, ListableAPIResource, FetchableAPIResource)
     @classmethod
     def class_url(cls):
         cls_name = cls.class_name()
-        return "v1/%ss/" % (cls_name,)
+        return "%ss/" % (cls_name,)
 
 
 class Refund(CreateableAPIResource, ListableAPIResource, FetchableAPIResource):
@@ -290,7 +290,7 @@ class Refund(CreateableAPIResource, ListableAPIResource, FetchableAPIResource):
     @classmethod
     def class_url(cls):
         cls_name = cls.class_name()
-        return "v1/%ss/" % (cls_name,)
+        return "%ss/" % (cls_name,)
 
 
 class Shipment(CreateableAPIResource, ListableAPIResource, FetchableAPIResource):
@@ -327,7 +327,7 @@ class Shipment(CreateableAPIResource, ListableAPIResource, FetchableAPIResource)
     @classmethod
     def class_url(cls):
         cls_name = cls.class_name()
-        return "v1/%ss/" % (cls_name,)
+        return "%ss/" % (cls_name,)
 
 
 class Transaction(CreateableAPIResource, ListableAPIResource, FetchableAPIResource):
@@ -353,7 +353,7 @@ class Transaction(CreateableAPIResource, ListableAPIResource, FetchableAPIResour
     @classmethod
     def class_url(cls):
         cls_name = cls.class_name()
-        return "v1/%ss/" % (cls_name,)
+        return "%ss/" % (cls_name,)
 
 
 class Rate(ListableAPIResource, FetchableAPIResource):
@@ -365,11 +365,11 @@ class Rate(ListableAPIResource, FetchableAPIResource):
     @classmethod
     def class_url(cls):
         cls_name = cls.class_name()
-        return "v1/%ss/" % (cls_name,)
+        return "%ss/" % (cls_name,)
 
 
 class CarrierAccount(CreateableAPIResource, ListableAPIResource, FetchableAPIResource, UpdateableAPIResource):
 
     @classmethod
     def class_url(cls):
-        return "v1/carrier_accounts/"
+        return "carrier_accounts/"
