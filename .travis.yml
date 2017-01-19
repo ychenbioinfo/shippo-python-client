@@ -6,28 +6,20 @@ python:
   - "3.3"
   - "3.4"
   - "3.5"
-
+cache:
+  apt: true
+  pip: false
+env: PYCURL_SSL_LIBRARY=gnutls
 addons:
   apt:
     sources:
       - debian-sid
     packages:
       - libssl1.0.0
-
 install:
+  - pip install unittest2 mock vcrpy tox-travis
+  - python setup.py clean --all
   - python setup.py install
-
-before_script:
-  - pip install unittest2
-  - pip install mock
-  - pip install vcrpy
-  - pip install cryptography
-
 script:
-  - python setup.py test
+  - python -W always setup.py test
 
-matrix:
-  allow_failures:
-    - python: pypy
-
-sudo: false
