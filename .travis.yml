@@ -9,12 +9,6 @@ python:
 cache:
   apt: true
   pip: false
-addons:
-  apt:
-    sources:
-      - debian-sid
-    packages:
-      - libssl1.0.0
 install:
   - pip install unittest2 mock vcrpy tox-travis
   - python setup.py clean --all
