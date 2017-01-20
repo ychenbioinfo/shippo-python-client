@@ -10,5 +10,5 @@ install:
   - pip install unittest2 mock vcrpy
   - python setup.py install
 script:
-  - python always setup.py test
+  - python setup.py test
 
