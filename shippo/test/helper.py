@@ -278,7 +278,7 @@ INVALID_BATCH = {
 }
 
 
-def create_mock_shipment(async=False, api_key=None):
+def create_mock_shipment(asynchronous=False, api_key=None):
     to_address = shippo.Address.create(api_key=api_key, **TO_ADDRESS)
     from_address = shippo.Address.create(api_key=api_key, **FROM_ADDRESS)
     parcel = shippo.Parcel.create(api_key=api_key, **DUMMY_PARCEL)
@@ -286,7 +286,7 @@ def create_mock_shipment(async=False, api_key=None):
     SHIPMENT['address_from'] = from_address.object_id
     SHIPMENT['address_to'] = to_address.object_id
     SHIPMENT['parcels'] = [parcel.object_id]
-    SHIPMENT['async'] = async
+    SHIPMENT['async'] = asynchronous
     shipment = shippo.Shipment.create(api_key=api_key, **SHIPMENT)
     return shipment
 
